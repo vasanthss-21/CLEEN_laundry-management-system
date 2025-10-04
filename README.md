@@ -43,6 +43,18 @@ It combines **RFID tags, load cells, IoT (ESP32/Raspberry Pi), and a React + Fir
 | password | number | Login password   |
 
 ---
+Screenshots
+Message:
+![Msg_ScreenShot](https://github.com/user-attachments/assets/e3f328a9-5179-4ddd-8738-a4cb208b474d)
+Prototype:
+![Prototype_Image](https://github.com/user-attachments/assets/5c1a5881-9684-4e64-b9c8-cfc10bdb0580)
+Web_Page:
+![Login_Page](https://github.com/user-attachments/assets/daebca9a-3369-462f-b2a8-683ead0346d4)
+![Home_Page](https://github.com/user-attachments/assets/51fc548a-65ec-44a4-97c5-9db3121e315a)
+![Dashboard_Page](https://github.com/user-attachments/assets/1be4660a-ff36-4217-821f-86807c64bf11)
+![Profile_Page](https://github.com/user-attachments/assets/016b0dc6-c465-48e8-81f2-b51a27cef0be)
+![MonthlyDetails_Page](https://github.com/user-attachments/assets/5e57a161-fb9c-49b5-b151-7fe7ab5951e5)
+
 
 ## Example Firestore entry
 ```json
@@ -69,19 +81,6 @@ const [user, setUser] = useState(() => localStorage.getItem('user') || '');
 // Logout
 localStorage.removeItem('user');
 setUser('');
-Screenshots
-Message:
-![Msg_ScreenShot](https://github.com/user-attachments/assets/e3f328a9-5179-4ddd-8738-a4cb208b474d)
-Prototype:
-![Prototype_Image](https://github.com/user-attachments/assets/5c1a5881-9684-4e64-b9c8-cfc10bdb0580)
-Web_Page:
-![Login_Page](https://github.com/user-attachments/assets/daebca9a-3369-462f-b2a8-683ead0346d4)
-![Home_Page](https://github.com/user-attachments/assets/51fc548a-65ec-44a4-97c5-9db3121e315a)
-![Dashboard_Page](https://github.com/user-attachments/assets/1be4660a-ff36-4217-821f-86807c64bf11)
-![Profile_Page](https://github.com/user-attachments/assets/016b0dc6-c465-48e8-81f2-b51a27cef0be)
-![MonthlyDetails_Page](https://github.com/user-attachments/assets/5e57a161-fb9c-49b5-b151-7fe7ab5951e5)
 
 
-
-Push and create a Pull Request
 
