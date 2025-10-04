@@ -49,8 +49,8 @@ It combines **RFID tags, load cells, IoT (ESP32/Raspberry Pi), and a React + Fir
 <div style="">
     <p><strong>Message:</strong></p>
     <img src="https://github.com/user-attachments/assets/e3f328a9-5179-4ddd-8738-a4cb208b474d"
-         alt="Msg_ScreenShot"
-         style="border-radius:10px; border:1px solid #ccc;" />
+         alt="Msg_ScreenShot" height="200" 
+         style="position:relative; border-radius:10px; border:1px solid #ccc;" />
     
   <p><strong>Prototype:</strong></p>
     <img src="https://github.com/user-attachments/assets/5c1a5881-9684-4e64-b9c8-cfc10bdb0580"
