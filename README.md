@@ -1,71 +1,87 @@
-# Getting Started with Create React App
+# CLEEN — RFID-Based Smart Laundry System 🧺
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CLEEN is a smart laundry management platform for hostels, PGs, apartments, and institutions.  
+It combines **RFID tags, load cells, IoT (ESP32/Raspberry Pi), and a React + Firebase web app** to deliver automated laundry tracking, weight-based billing, and real-time status updates.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
+- 🔖 RFID-tagged bags for unique identification  
+- ⚖️ Load-cell weight measurement → automatic billing  
+- 📲 Real-time status tracking (In Progress → Ready for Collection)  
+- 🔔 Notifications via app/SMS  
+- 📸 Student/customer profile with photo, reg no, mobile, and RFID  
+- 🔁 Scalable & modular — supports ESP32 and Raspberry Pi  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
+- **Frontend:** React, React Router  
+- **Backend:** Firebase Realtime DB (auth), Firestore (profiles), Storage (images)  
+- **Edge devices:** ESP32 (current), upgrading to Raspberry Pi  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Firebase Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Firestore (`students` collection)
+| Field     | Type   | Description                  |
+|-----------|--------|------------------------------|
+| regNo     | string | Student registration number  |
+| name      | string | Student name                 |
+| mobile    | string | Student mobile number        |
+| photoUrl  | string | Public URL of profile photo  |
 
-### `npm run build`
+> Use **raw.githubusercontent.com** URLs for GitHub-hosted images:  
+> ```
+> https://raw.githubusercontent.com/<username>/<repo>/main/path/to/image.png
+> ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Realtime Database (`Auth/<TagId>`)
+| Field    | Type   | Description      |
+|----------|--------|-----------------|
+| password | number | Login password   |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Example Firestore entry
+```json
+{
+  "regNo": "21EC001",
+  "name": "Vasanth",
+  "mobile": "9876543210",
+  "photoUrl": "samplePhoto.com"
+} 
 
-### `npm run eject`
+Getting Started
+bash
+git clone https://github.com/vasanthss-21/CLEEN_laundry-management-system.git
+cd CLEEN_laundry-management-system
+npm install
+npm start
+Persistent Login in React.js
+// Save login
+localStorage.setItem('user', tagid);
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+// Initialize state
+const [user, setUser] = useState(() => localStorage.getItem('user') || '');
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+// Logout
+localStorage.removeItem('user');
+setUser('');
+Screenshots
+Message:
+![Msg_ScreenShot](https://github.com/user-attachments/assets/e3f328a9-5179-4ddd-8738-a4cb208b474d)
+Prototype:
+![Prototype_Image](https://github.com/user-attachments/assets/5c1a5881-9684-4e64-b9c8-cfc10bdb0580)
+Web_Page:
+![Login_Page](https://github.com/user-attachments/assets/daebca9a-3369-462f-b2a8-683ead0346d4)
+![Home_Page](https://github.com/user-attachments/assets/51fc548a-65ec-44a4-97c5-9db3121e315a)
+![Dashboard_Page](https://github.com/user-attachments/assets/1be4660a-ff36-4217-821f-86807c64bf11)
+![Profile_Page](https://github.com/user-attachments/assets/016b0dc6-c465-48e8-81f2-b51a27cef0be)
+![MonthlyDetails_Page](https://github.com/user-attachments/assets/5e57a161-fb9c-49b5-b151-7fe7ab5951e5)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+Push and create a Pull Request
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# CLEEN_laundry-management-system" 
