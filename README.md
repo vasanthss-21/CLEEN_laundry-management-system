@@ -32,11 +32,6 @@ It combines **RFID tags, load cells, IoT (ESP32/Raspberry Pi), and a React + Fir
 | mobile    | string | Student mobile number        |
 | photoUrl  | string | Public URL of profile photo  |
 
-> Use **raw.githubusercontent.com** URLs for GitHub-hosted images:  
-> ```
-> https://raw.githubusercontent.com/<username>/<repo>/main/path/to/image.png
-> ```
-
 ### Realtime Database (`Auth/<TagId>`)
 | Field    | Type   | Description      |
 |----------|--------|-----------------|
@@ -44,7 +39,6 @@ It combines **RFID tags, load cells, IoT (ESP32/Raspberry Pi), and a React + Fir
 
 ---
 ## 🖼 Screenshots
-<div align="center">
 
 <div style="">
     <p><strong>Message:</strong></p>
@@ -68,8 +62,8 @@ It combines **RFID tags, load cells, IoT (ESP32/Raspberry Pi), and a React + Fir
 <img src="https://github.com/user-attachments/assets/016b0dc6-c465-48e8-81f2-b51a27cef0be" alt="Profile_Page" width="350" style="border-radius:10px; border:1px solid #ccc; margin:5px;" />
 <img src="https://github.com/user-attachments/assets/5e57a161-fb9c-49b5-b151-7fe7ab5951e5" alt="MonthlyDetails_Page" width="350" style="border-radius:10px; border:1px solid #ccc; margin:5px;" />
 
-</div>
 ## Example Firestore entry
+
 ```json
 {
   "regNo": "21EC001",
@@ -77,7 +71,6 @@ It combines **RFID tags, load cells, IoT (ESP32/Raspberry Pi), and a React + Fir
   "mobile": "9876543210",
   "photoUrl": "samplePhoto.com"
 } 
-
 ## Getting Started
 bash
 git clone https://github.com/vasanthss-21/CLEEN_laundry-management-system.git
