@@ -80,10 +80,13 @@ It combines **RFID tags, load cells, IoT (ESP32/Raspberry Pi), and a React + Fir
 
 ## Getting Started
 bash
-> git clone https://github.com/vasanthss-21/CLEEN_laundry-management-system.git
-> cd CLEEN_laundry-management-system
-> npm install
-> npm start
+git clone https://github.com/vasanthss-21/CLEEN_laundry-management-system.git
+
+cd CLEEN_laundry-management-system
+
+npm install
+
+npm start
 
 ## Persistent Login in React.js
 // Save login
