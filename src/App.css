@@ -1,0 +1,37 @@
+/* Make the entire background light blue */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ADD8E6; /* Light blue background */
+}
+
+/* Container that holds sidebar + main content */
+.container {
+  display: flex;
+  min-height: 100vh; /* Ensures full screen height */
+}
+
+/* Sidebar styles */
+.container > * {
+  box-sizing: border-box;
+}
+
+aside {
+  background-color: #f0f0f0;
+  width: 200px;
+  padding: 20px;
+}
+
+/* Main content area */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Header styles (optional) */
+header {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
