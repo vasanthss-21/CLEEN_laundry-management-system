@@ -46,11 +46,24 @@ It combines **RFID tags, load cells, IoT (ESP32/Raspberry Pi), and a React + Fir
 ## 🖼 Screenshots
 <div align="center">
 
-**Message:**  
-<img src="https://github.com/user-attachments/assets/e3f328a9-5179-4ddd-8738-a4cb208b474d" alt="Msg_ScreenShot" height="250" style="border-radius:10px; border:1px solid #ccc; margin:10px;" />
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
 
-**Prototype:**  
-<img src="https://github.com/user-attachments/assets/5c1a5881-9684-4e64-b9c8-cfc10bdb0580" alt="Prototype_Image" width="400" style="border-radius:10px; border:1px solid #ccc; margin:10px;" />
+  <div style="flex: 1 1 300px; text-align: center;">
+    <p><strong>Message:</strong></p>
+    <img src="https://github.com/user-attachments/assets/e3f328a9-5179-4ddd-8738-a4cb208b474d" 
+         alt="Msg_ScreenShot" 
+         style="width:100%; max-width:400px; border-radius:10px; border:1px solid #ccc;" />
+  </div>
+
+  <div style="flex: 1 1 300px; text-align: center;">
+    <p><strong>Prototype:</strong></p>
+    <img src="https://github.com/user-attachments/assets/5c1a5881-9684-4e64-b9c8-cfc10bdb0580" 
+         alt="Prototype_Image" 
+         style="width:100%; max-width:400px; border-radius:10px; border:1px solid #ccc;" />
+  </div>
+
+</div>
+
 
 **Web Pages:**  
 <img src="https://github.com/user-attachments/assets/daebca9a-3369-462f-b2a8-683ead0346d4" alt="Login_Page" width="350" style="border-radius:10px; border:1px solid #ccc; margin:5px;" />
