@@ -72,6 +72,7 @@ It combines **RFID tags, load cells, IoT (ESP32/Raspberry Pi), and a React + Fir
   <img src="https://github.com/user-attachments/assets/016b0dc6-c465-48e8-81f2-b51a27cef0be" alt="Profile_Page" width="350" style="border-radius:10px; border:1px solid #ccc; margin:5px;" />
 </p>
 
+---
 
 ## Getting Started
 bash
@@ -83,6 +84,8 @@ npm install
 
 npm start
 
+---
+
 ## Persistent Login in React.js
 // Save login
 localStorage.setItem('user', tagid);
@@ -93,6 +96,8 @@ const [user, setUser] = useState(() => localStorage.getItem('user') || '');
 // Logout
 localStorage.removeItem('user');
 setUser('');
+
+---
 
 ## Example Firestore entry
 ```json
